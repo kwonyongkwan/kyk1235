@@ -1,18 +1,11 @@
-// feature.js
+// feature.js - 작은 기능들을 합치기 전
 function createLoginForm() {
- const form = document.createElement('form');
+ // 여러 작은 수정 사항들이 포함된 코드
+const form = document.createElement('form');
  form.innerHTML = `
  <input type="text" id="username" placeholder="Username">
- <input type="password" id="password" placeholder="Password">
  <button type="submit">Login</button>
  `;
  document.body.appendChild(form);
- form.addEventListener('submit', function(event) {
- const username = document.getElementById('username').value;
- const password = document.getElementById('password').value;
- if (!username || !password) {
- event.preventDefault();
- alert("Both fields are required!");
- }
- });
+ // 작은 기능 추가들 (이 부분이 여러 커밋으로 나눠진 경우 스쿼시 가능)
 }

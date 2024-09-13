@@ -1,10 +1,4 @@
-// app.js
+// app.js - 커밋 메시지 수정 전
 function login(username, password) {
- // 수정: username과 password가 모두 있는 경우에만
-로그인 성공
-if (username !== "" && password !== "") {
- console.log("Login successful");
- } else {
- console.log("Login failed");
- }
+ console.log("User logged in"); // 커밋 메시지 실수: "버그 수정"이라고 잘못 적음
 }
